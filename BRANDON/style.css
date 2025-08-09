@@ -1,0 +1,209 @@
+/* Reset simples */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  background-color: #f0f8ff;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Container central */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 18px 0;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.brand h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.tagline {
+  margin: 2px 0 0 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+/* Navegação */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s, transform 0.15s;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Seções e cards */
+.section {
+  padding: 28px 0;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+/* Imagens */
+.hero-img img,
+.inline-img {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  margin: 12px auto;
+  border-radius: 8px;
+}
+
+/* Classe específica para a imagem do pato, menor e centralizada */
+.pato-img {
+  width: 180px; /* menor que as outras */
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* Lista de tópicos */
+.topics ul {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+input[type='text'],
+input[type='email'],
+textarea {
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #66a8e0;
+  box-shadow: 0 0 0 3px rgba(102, 168, 224, 0.12);
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s, background-color 0.12s;
+}
+button:hover {
+  transform: translateY(-3px);
+  background-color: #005fa3;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid #0077cc;
+  color: #0077cc;
+  font-weight: 700;
+}
+
+/* Mensagens de erro e retorno */
+.erro {
+  color: #b00020;
+  font-size: 0.9rem;
+  height: 1.1rem;
+}
+.retorno {
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #0077cc;
+  color: white;
+  padding: 14px 0;
+  margin-top: 18px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.small-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Responsividade simples */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}

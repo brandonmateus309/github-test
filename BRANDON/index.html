@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FinanCico – O Passarinho Investidor</title>
+  <!-- Link para CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>🐤 FinanCico</h1>
+        <p class="tagline">O Passarinho que Ensina Finanças para Jovens</p>
+      </div>
+
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section container">
+      <h2>📌 Quem é o FinanCico?</h2>
+      <article class="card">
+        <p><strong>Nome:</strong> FinanCico</p>
+        <p><strong>Missão:</strong> Ajudar jovens a entender o valor do dinheiro com humor, criatividade e linguagem simples.</p>
+        <p><strong>Estilo:</strong> Engraçado, inteligente, cheio de memes e metáforas com jogos e vida real.</p>
+      </article>
+
+      <!-- imagem: troque o src se usar pasta assets/ -->
+      <figure class="hero-img card">
+        <img src="bitbird.jpeg" alt="FinanCico segurando uma moeda" />
+        <figcaption>FinanCico no seu melhor estilo investidor</figcaption>
+      </figure>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section container">
+      <h2>🎯 Conteúdo Criativo</h2>
+
+      <article class="card">
+        <h3>📽️ Episódio: O que é investir?</h3>
+        <p>“Investir é como colocar sua grana num ninho que choca outro ovo de dinheiro!”</p>
+      </article>
+
+      <article class="card">
+        <h3>📸 Post: Crédito vs Débito</h3>
+        <img src="cards.jpeg" alt="Ilustração sobre cartão de crédito e débito" class="inline-img" />
+        <p><em>(FinanCico prefere cartão de crédito quando você sabe usar)</em></p>
+
+        <figure class="pato-card">
+          <img src="pato.jpeg" alt="Pato FinanCico" class="pato-img" />
+          <!-- <figcaption>Pato FinanCico explicando finanças</figcaption> -->
+        </figure>
+      </article>
+
+      <article class="card">
+        <h3>🎮 Projeto de Jogo: FinanCico Tycoon</h3>
+        <p>Um jogo estilo Roblox onde você constrói sua ilha financeira, evita golpes e aprende a investir jogando.</p>
+      </article>
+
+      <div class="card topics">
+        <h3>Tópicos Ensinados</h3>
+        <ul>
+          <li>💸 Diferença entre poupar e investir</li>
+          <li>📊 Juros compostos</li>
+          <li>💳 Crédito vs débito</li>
+          <li>🔒 Como evitar golpes</li>
+          <li>🎯 Planejamento de metas financeiras</li>
+          <li>🏡 Renda passiva</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section container">
+      <h2>📩 Fale com o FinanCico</h2>
+
+      <article class="card">
+        <form id="formContato" novalidate>
+          <div class="form-row">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            <small class="erro" id="erro-nome" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required />
+            <small class="erro" id="erro-email" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+            <small class="erro" id="erro-mensagem" aria-live="polite"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="btn-enviar">Enviar</button>
+            <button type="button" id="btn-limpar" class="btn-ghost">Limpar</button>
+          </div>
+
+          <p id="mensagemRetorno" class="retorno" aria-live="polite"></p>
+        </form>
+      </article>
+
+      <article class="card contato-info">
+        <h3>Redes</h3>
+        <p><strong>Instagram:</strong> @FinanCico</p>
+        <p><strong>Roblox:</strong> financico</p>
+        <p><strong>YouTube:</strong> FinanCico</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>©️ 2025 FinanCico | Criado por Brandon Mateus</p>
+      <a class="small-link" href="#home">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
